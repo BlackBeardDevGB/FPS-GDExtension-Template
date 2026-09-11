@@ -1,5 +1,7 @@
 #     FPS-GDExtension-Template
 
+Playable web-demo: [https://blackbearddevgb.itch.io/fps-gdextension-template]
+
 This repository serves as a resource for how an FPS character might be implemented in Godot using C++.
 This project can be built for Windows and Web, however Linux and Mac will need to be implemented.
 
