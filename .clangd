@@ -1,0 +1,7 @@
+CompileFlags:
+  Add:
+    - -IC:/Godot-4/Godot-4.7.2-no-dotnet/cpp-projects/fps/godot-cpp/include
+    - -IC:/Godot-4/Godot-4.7.2-no-dotnet/cpp-projects/fps/godot-cpp/gen/include
+    - -IC:/Godot-4/Godot-4.7.2-no-dotnet/cpp-projects/fps/godot-cpp/gdextension
+    - -IC:/Godot-4/Godot-4.7.2-no-dotnet/cpp-projects/fps/src
+    - -std=c++20
