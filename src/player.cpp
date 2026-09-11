@@ -201,8 +201,6 @@ void Player::UpdateMovement(double delta)
     
     if (input->is_action_just_pressed(("ui_accept")) && is_on_floor())
     {
-        // animPlayer->play("cam-anims/jump");
-        // _weaponManager.RecoilStack += Vector3.Left * 0.085f;
         newVelocity.y = fJumpVelocity;
     }
 
@@ -219,9 +217,6 @@ void Player::UpdateMovement(double delta)
 
             fCurrentSpeed = Math::move_toward(fCurrentSpeed, baseSpeed, (float)delta * fAcceleration);
             vCurrentDirection = vCurrentDirection.move_toward(direction, (float)delta * fInputAcceleration);
-            
-            // animPlayer->play("cam-anims/walk");
-            // _bodyAnimPlayer.SpeedScale = direction.LengthSquared() * 0.75f;
         }
         else
         {
@@ -231,10 +226,7 @@ void Player::UpdateMovement(double delta)
 
         iFootStepCounter += (float)delta;
         if (iFootStepCounter >= fFootStepSoundInterval)
-        {
             iFootStepCounter = 0;
-            // GameManager.Instance.CurrentLevel.CreateAISound(this, GlobalPosition, null, false, 3);
-        }
 
         newVelocity.x = vCurrentDirection.x * fCurrentSpeed;
         newVelocity.z = vCurrentDirection.z * fCurrentSpeed;

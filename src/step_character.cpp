@@ -43,9 +43,6 @@ void StepCharacter::MoveAndStairStep()
 
 void StepCharacter::StairStepUp()
 {
-    if (!bGrounded && bForceStairStep == false) 
-        return;
-
     Vector3 currentVelocity = get_velocity();
 
     Vector3 horizontalVelocity = currentVelocity * HORIZONTAL;
@@ -107,7 +104,6 @@ void StepCharacter::StairStepDown()
 {
     Vector3 velocity = get_velocity();
 
-	if (bWasGrounded == false || velocity.y >= 0) return;
 
     Ref<PhysicsTestMotionResult3D> result;
     result.instantiate();
