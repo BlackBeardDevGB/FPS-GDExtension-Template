@@ -14,18 +14,26 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="GDExtension First-Person Controller Template"
-config/tags=PackedStringArray("template")
+config/name="swarm"
+config/tags=PackedStringArray("test")
 run/main_scene="uid://d0cqh5njv440w"
 config/features=PackedStringArray("4.7", "Forward Plus")
-run/max_fps=144
 config/icon="res://icon.svg"
+
+[debug]
+
+settings/stdout/print_fps=true
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/vsync/vsync_mode=0
+
+[global_group]
+
+attractor=""
+member=""
 
 [input]
 
@@ -71,5 +79,5 @@ fire={
 
 [physics]
 
-common/physics_ticks_per_second=144
+common/physics_ticks_per_second=244
 3d/physics_engine="Jolt Physics"

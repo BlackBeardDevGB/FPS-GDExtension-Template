@@ -1,9 +1,8 @@
-#include "register_types.h"
-
 #include <gdextension_interface.h>
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
+#include "npc_swarm.hpp"
 #include "player.hpp"
 #include "step_character.hpp"
 
@@ -17,6 +16,8 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 
 	GDREGISTER_CLASS(StepCharacter);
 	GDREGISTER_CLASS(Player);
+	GDREGISTER_CLASS(NPCSwarm);
+	GDREGISTER_CLASS(SwarmMember);
 }
 
 void uninitialize_gdextension_types(ModuleInitializationLevel p_level) {

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://daky4qwvgw37o"]
+
+[ext_resource type="Texture2D" uid="uid://dbx66sovxd1" path="res://icon.svg" id="1_njbtt"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_njbtt"]
+radius = 0.077
+
+[node name="SwarmMember" type="SwarmMember" unique_id=1932280833 groups=["member"]]
+gdLookRayPath = NodePath("lookray")
+gdSpritePath = NodePath("sprite")
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=278789395]
+shape = SubResource("SphereShape3D_njbtt")
+
+[node name="sprite" type="Sprite3D" parent="." unique_id=692554134]
+modulate = Color(1, 0, 0, 1)
+pixel_size = 0.001
+billboard = 1
+texture = ExtResource("1_njbtt")
+
+[node name="lookray" type="RayCast3D" parent="." unique_id=965886714]
+transform = Transform3D(1, 0, 0, 0, 0.9166128, 0.39977622, 0, -0.39977622, 0.9166128, 0, 0.061946835, 0)
+top_level = true
+target_position = Vector3(0, 0, -0.15)
+collision_mask = 2
